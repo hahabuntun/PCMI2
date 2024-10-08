@@ -192,7 +192,7 @@ namespace Lab2.ViewModels
             }
         }
 
-        private bool IsMovingIntoChildDirectory(string sourcePath, string destinationPath)
+        public bool IsMovingIntoChildDirectory(string sourcePath, string destinationPath)
         {
             var sourceDirectoryInfo = new DirectoryInfo(sourcePath);
             var destinationDirectoryInfo = new DirectoryInfo(destinationPath);

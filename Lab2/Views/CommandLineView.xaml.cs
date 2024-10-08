@@ -36,6 +36,10 @@ namespace Lab2.Views
             CommandOutput.Items.Clear();
             try
             {
+                if (command.ToLower() == "cd c" || command.ToLower() == "cd c:" || command.ToLower() == "cd d:" || command.ToLower() == "cd d")
+                {
+                    throw new InvalidOperationException("invalid path");
+                }
                 if (command.StartsWith("cd "))
                 {
                     // Переход в директорию
@@ -80,6 +84,10 @@ namespace Lab2.Views
                         else if (Directory.Exists(sourcePath))
                         {
                             string destination = Path.Combine(destPath, Path.GetFileName(sourcePath));
+                            if (_viewModel.IsMovingIntoChildDirectory(sourcePath, destination))
+                            {
+                                throw new InvalidOperationException("Cannot move parent directory into child directory.");
+                            }
                             CopyDirectory(sourcePath, destination);
                         }
                         else
@@ -87,6 +95,10 @@ namespace Lab2.Views
                             throw new FileNotFoundException($"File or directory not found: {sourcePath}");
                         }
                     }
+                }
+                else if (command.StartsWith("help"))
+                {
+                    Help();
                 }
                 else if (command.StartsWith("cut "))
                 {
@@ -107,6 +119,10 @@ namespace Lab2.Views
                         else if (Directory.Exists(sourcePath))
                         {
                             string destination = Path.Combine(destPath, Path.GetFileName(sourcePath));
+                            if (_viewModel.IsMovingIntoChildDirectory(sourcePath, destination))
+                            {
+                                throw new InvalidOperationException("Cannot move parent directory into child directory.");
+                            }
                             Directory.Move(sourcePath, destination);
                         }
                         else
@@ -169,6 +185,16 @@ namespace Lab2.Views
                 };
                 CommandOutput.Items.Add(item);
             }
+        }
+
+        private void Help()
+        {
+            CommandOutput.Items.Clear(); // Очищаем предыдущий вывод
+            CommandOutput.Items.Add("cut имя_файла(директории) | имя_файла(директории) ... куда(в какую директорию)");
+            CommandOutput.Items.Add("copy имя_файла(директории) | имя_файла(директории) ... куда(в какую директорию)");
+            CommandOutput.Items.Add("help для получения помощи");
+            CommandOutput.Items.Add("ls - получение данных о директории текущей");
+            CommandOutput.Items.Add("cd путь для перехода по директориям");
         }
     }
 }

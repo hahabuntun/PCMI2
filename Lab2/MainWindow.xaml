@@ -8,6 +8,9 @@
         <TabItem Header="File Explorer">
             <local:FileExplorerView/>
         </TabItem>
+        <TabItem Header="Help">
+            <local:HelpView/>
+        </TabItem>
         <TabItem Header="Command Line">
             <local:CommandLineView/>
         </TabItem>
