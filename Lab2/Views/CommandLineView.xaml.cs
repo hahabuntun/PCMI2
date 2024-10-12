@@ -1,4 +1,5 @@
-﻿using Lab2.ViewModels;
+﻿using Lab2.Models;
+using Lab2.ViewModels;
 using System;
 using System.IO;
 using System.Linq;
@@ -32,7 +33,7 @@ namespace Lab2.Views
 
         private void ExecuteCommand(string command)
         {
-            _viewModel.ErrorMessage = "";
+            _viewModel.OperationResult = new OperationResult(); // Сброс предыдущего результата
             CommandOutput.Items.Clear();
             try
             {
@@ -133,12 +134,12 @@ namespace Lab2.Views
                 }
                 else
                 {
-                    _viewModel.ErrorMessage = $"Unknown command: {command}";
+                    _viewModel.OperationResult = new OperationResult { ResultTxt = $"Unknown command: {command}", IsError = true };
                 }
             }
             catch (Exception ex)
             {
-                _viewModel.ErrorMessage = $"Error: {ex.Message}";
+                _viewModel.OperationResult = new OperationResult { ResultTxt = $"Error: {ex.Message}", IsError = true };
             }
         }
 

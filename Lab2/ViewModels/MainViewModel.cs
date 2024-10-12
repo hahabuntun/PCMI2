@@ -1,9 +1,9 @@
 ﻿using Lab2.Commands;
-using Lab2.ViewModels;
+using Lab2.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics; // Add this
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Windows.Input;
@@ -15,16 +15,18 @@ namespace Lab2.ViewModels
         public ObservableCollection<FileItem> Items { get; set; }
 
         private ObservableCollection<FileItem> _selectedItems = new ObservableCollection<FileItem>();
-        private string _errorMessage = "";
-        public string ErrorMessage 
-        { 
-            get => _errorMessage;
+
+        private OperationResult _operationResult = new OperationResult();
+        public OperationResult OperationResult
+        {
+            get => _operationResult;
             set
             {
-                _errorMessage = value;
-                OnPropertyChanged(nameof(ErrorMessage));
-            } 
+                _operationResult = value;
+                OnPropertyChanged(nameof(OperationResult));
+            }
         }
+
         public ObservableCollection<FileItem> SelectedItems
         {
             get => _selectedItems;
@@ -41,7 +43,7 @@ namespace Lab2.ViewModels
             ((RelayCommand)CopyCommand).RaiseCanExecuteChanged();
             ((RelayCommand)CutCommand).RaiseCanExecuteChanged();
             ((RelayCommand)PasteCommand).RaiseCanExecuteChanged();
-            ErrorMessage = "";
+            OperationResult = new OperationResult { ResultTxt = "", IsError = false };
         }
 
         private string _currentDirectory;
@@ -95,7 +97,7 @@ namespace Lab2.ViewModels
         {
             if (SelectedItems.FirstOrDefault(item => item.IsDirectory) is FileItem selectedItem)
             {
-                Trace.WriteLine($"Navigating to directory: {selectedItem.Path}"); // Log action
+                Trace.WriteLine($"Navigating to directory: {selectedItem.Path}");
                 CurrentDirectory = selectedItem.Path;
                 LoadItems(CurrentDirectory);
             }
@@ -106,7 +108,7 @@ namespace Lab2.ViewModels
             var parentDirectory = Directory.GetParent(_currentDirectory)?.FullName;
             if (parentDirectory != null)
             {
-                Trace.WriteLine($"Navigating back to directory: {parentDirectory}"); // Log action
+                Trace.WriteLine($"Navigating back to directory: {parentDirectory}");
                 CurrentDirectory = parentDirectory;
                 LoadItems(CurrentDirectory);
             }
@@ -118,9 +120,10 @@ namespace Lab2.ViewModels
             {
                 _clipboardItems = SelectedItems.Select(item => item.Path).ToList();
                 _isCutOperation = false;
-                Trace.WriteLine($"Copied items: {string.Join(", ", _clipboardItems)}"); // Log action
+                Trace.WriteLine($"Copied items: {string.Join(", ", _clipboardItems)}");
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
+                OperationResult = new OperationResult { ResultTxt = "Items copied to clipboard.", IsError = false };
             }
         }
 
@@ -130,9 +133,10 @@ namespace Lab2.ViewModels
             {
                 _clipboardItems = SelectedItems.Select(item => item.Path).ToList();
                 _isCutOperation = true;
-                Trace.WriteLine($"Cut items: {string.Join(", ", _clipboardItems)}"); // Log action
+                Trace.WriteLine($"Cut items: {string.Join(", ", _clipboardItems)}");
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
+                OperationResult = new OperationResult { ResultTxt = "Items cut to clipboard.", IsError = false };
             }
         }
 
@@ -155,12 +159,12 @@ namespace Lab2.ViewModels
                             if (_isCutOperation)
                             {
                                 Directory.Move(clipboardItem, destinationPath);
-                                Trace.WriteLine($"Moved directory from {clipboardItem} to {destinationPath}"); // Log action
+                                Trace.WriteLine($"Moved directory from {clipboardItem} to {destinationPath}");
                             }
                             else
                             {
                                 CopyDirectory(clipboardItem, destinationPath);
-                                Trace.WriteLine($"Copied directory from {clipboardItem} to {destinationPath}"); // Log action
+                                Trace.WriteLine($"Copied directory from {clipboardItem} to {destinationPath}");
                             }
                         }
                         else if (File.Exists(clipboardItem))
@@ -168,19 +172,19 @@ namespace Lab2.ViewModels
                             if (_isCutOperation)
                             {
                                 File.Move(clipboardItem, destinationPath);
-                                Trace.WriteLine($"Moved file from {clipboardItem} to {destinationPath}"); // Log action
+                                Trace.WriteLine($"Moved file from {clipboardItem} to {destinationPath}");
                             }
                             else
                             {
                                 File.Copy(clipboardItem, destinationPath);
-                                Trace.WriteLine($"Copied file from {clipboardItem} to {destinationPath}"); // Log action
+                                Trace.WriteLine($"Copied file from {clipboardItem} to {destinationPath}");
                             }
                         }
                     }
                     catch (Exception ex)
                     {
-                        Trace.WriteLine($"Error during paste operation: {ex.Message}"); // Log error
-                        ErrorMessage = $"Error during paste operation: {ex.Message}";
+                        Trace.WriteLine($"Error during paste operation: {ex.Message}");
+                        OperationResult = new OperationResult { ResultTxt = $"Error during paste operation: {ex.Message}", IsError = true };
                         return;
                     }
                 }
@@ -189,6 +193,7 @@ namespace Lab2.ViewModels
                 _clipboardItems.Clear();
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
+                OperationResult = new OperationResult { ResultTxt = "Paste operation completed successfully.", IsError = false };
             }
         }
 
@@ -197,13 +202,9 @@ namespace Lab2.ViewModels
             var sourceDirectoryInfo = new DirectoryInfo(sourcePath);
             var destinationDirectoryInfo = new DirectoryInfo(destinationPath);
 
-            // Проверяем, начинается ли путь назначения с пути исходной директории, что означает поддиректорию
             bool isInside = destinationDirectoryInfo.FullName.StartsWith(sourceDirectoryInfo.FullName, StringComparison.OrdinalIgnoreCase);
-
-            // Проверяем, не является ли путь назначения тем же, что и исходный
             bool isSameDirectory = string.Equals(sourceDirectoryInfo.FullName, destinationDirectoryInfo.FullName, StringComparison.OrdinalIgnoreCase);
 
-            // Возвращаем true, если перемещаем в саму себя или в поддиректорию
             return isInside && !isSameDirectory;
         }
 
