@@ -5,6 +5,7 @@
     <UserControl.Resources>
         <local:BoolToTypeConverter x:Key="BoolToTypeConverter"/>
         <local:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
+        <local:BoolToColorConverter x:Key="BoolToColorConverter"/>
 
         <!-- Стили для основных кнопок -->
         <Style TargetType="Button" x:Key="StyledButton">
@@ -58,55 +59,35 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-
-        <!-- Стили для кнопок переключения табов -->
-        <Style TargetType="Button" x:Key="TabButtonStyle">
-            <Setter Property="Background" Value="LightGray"/>
-            <Setter Property="Foreground" Value="DarkSlateGray"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Padding" Value="10,5"/>
-            <Setter Property="Margin" Value="2"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                CornerRadius="3">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="DarkSlateGray"/>
-                    <Setter Property="Foreground" Value="White"/>
-                </Trigger>
-                <Trigger Property="IsEnabled" Value="False">
-                    <Setter Property="Background" Value="LightGray"/>
-                    <Setter Property="Foreground" Value="Gray"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
     </UserControl.Resources>
 
-    <StackPanel>
-        <!-- Текущая директория -->
-        <TextBlock Text="{Binding CurrentDirectory}" FontWeight="Bold" FontSize="16" Margin="10,5" Foreground="DarkBlue"/>
+    <!-- Основной контейнер Grid -->
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <!-- Верхний ряд занимает 70% высоты -->
+            <RowDefinition Height="8*"/>
+            <!-- Нижний ряд занимает оставшиеся 30% -->
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
 
-        <!-- Панель с кнопками -->
-        <StackPanel Orientation="Horizontal">
-            <Button Command="{Binding NavigateBackCommand}" Content="Назад" Style="{StaticResource StyledButton}"/>
-            <Button Command="{Binding CopyCommand}" Content="Копировать" Style="{StaticResource StyledButton}"/>
-            <Button Command="{Binding CutCommand}" Content="Вырезать" Style="{StaticResource StyledButton}" />
-            <Button Command="{Binding PasteCommand}" Content="Вставить" Style="{StaticResource StyledButton}" />
-        </StackPanel>
+        <!-- Верхняя часть: директория и кнопки -->
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+            <!-- Текущая директория -->
+            <TextBlock Text="{Binding CurrentDirectory}" FontWeight="Bold" FontSize="16" Margin="10,5" Foreground="DarkBlue"/>
 
-        <!-- Список файлов -->
-        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="400">
-            <ListView ItemsSource="{Binding Items}" SelectionMode="Extended" MinHeight="300" Margin="5"
-                      MouseDoubleClick="ListView_MouseDoubleClick" SelectionChanged="ListView_SelectionChanged">
+            <!-- Панель с кнопками -->
+            <StackPanel Orientation="Horizontal">
+                <Button Command="{Binding NavigateBackCommand}" Content="Назад" Style="{StaticResource StyledButton}"/>
+                <Button Command="{Binding CopyCommand}" Content="Копировать" Style="{StaticResource StyledButton}"/>
+                <Button Command="{Binding CutCommand}" Content="Вырезать" Style="{StaticResource StyledButton}" />
+                <Button Command="{Binding PasteCommand}" Content="Вставить" Style="{StaticResource StyledButton}" />
+            </StackPanel>
+
+            <!-- Список файлов с прокруткой -->
+            <ListView ItemsSource="{Binding Items}" Height="300" SelectionMode="Extended" Margin="5"
+                      MouseDoubleClick="ListView_MouseDoubleClick" SelectionChanged="ListView_SelectionChanged"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      VerticalAlignment="Stretch">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -116,12 +97,13 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </ScrollViewer>
+        </StackPanel>
 
-        <!-- Окно ошибки, если сообщение об ошибке не пустое -->
-        <Border Background="LightCoral" Padding="10" CornerRadius="5" Margin="10,5"
-                Visibility="{Binding ErrorMessage, Converter={StaticResource StringToVisibilityConverter}}">
-            <TextBlock Text="{Binding ErrorMessage}" Foreground="White" FontWeight="Bold"/>
+        <!-- Border, который занимает 30% оставшейся высоты и 100% ширины -->
+        <Border Grid.Row="1" CornerRadius="5" HorizontalAlignment="Stretch" Height="50" Margin="5" VerticalAlignment="Stretch"
+                Background="{Binding OperationResult.IsError, Converter={StaticResource BoolToColorConverter}}">
+            <!-- Здесь можно поместить любой контент или оставить Border пустым -->
+            <TextBlock Text="{Binding OperationResult.ResultTxt}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         </Border>
-    </StackPanel>
+    </Grid>
 </UserControl>

@@ -17,7 +17,7 @@ namespace Lab2.Converters
             if (value is bool boolValue)
             {
                 // Если значение true, возвращаем LightCoral, если false — Green
-                return boolValue ? Brushes.LightCoral : Brushes.Green;
+                return boolValue ? Brushes.LightCoral : Brushes.LawnGreen;
             }
             // Возвращаем стандартный цвет (например, Transparent), если значение не является bool
             return Brushes.Transparent;

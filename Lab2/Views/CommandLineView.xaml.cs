@@ -61,10 +61,12 @@ namespace Lab2.Views
                             throw new DirectoryNotFoundException($"Directory not found: {path}");
                         }
                     }
+                    _viewModel.OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
                 }
                 else if (command.StartsWith("ls"))
                 {
                     DisplayDirectoryContents();
+                    _viewModel.OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
                 }
                 else if (command.StartsWith("copy "))
                 {
@@ -96,10 +98,12 @@ namespace Lab2.Views
                             throw new FileNotFoundException($"File or directory not found: {sourcePath}");
                         }
                     }
+                    _viewModel.OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
                 }
                 else if (command.StartsWith("help"))
                 {
                     Help();
+                    _viewModel.OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
                 }
                 else if (command.StartsWith("cut "))
                 {
@@ -125,12 +129,14 @@ namespace Lab2.Views
                                 throw new InvalidOperationException("Cannot move parent directory into child directory.");
                             }
                             Directory.Move(sourcePath, destination);
+
                         }
                         else
                         {
                             throw new FileNotFoundException($"File or directory not found: {sourcePath}");
                         }
                     }
+                    _viewModel.OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
                 }
                 else
                 {

@@ -100,6 +100,7 @@ namespace Lab2.ViewModels
                 Trace.WriteLine($"Navigating to directory: {selectedItem.Path}");
                 CurrentDirectory = selectedItem.Path;
                 LoadItems(CurrentDirectory);
+                OperationResult = new OperationResult() { IsError = false, ResultTxt = "Успех" };
             }
         }
         
