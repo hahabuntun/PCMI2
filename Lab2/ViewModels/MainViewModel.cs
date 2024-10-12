@@ -102,7 +102,7 @@ namespace Lab2.ViewModels
                 LoadItems(CurrentDirectory);
             }
         }
-
+        
         private void NavigateBack()
         {
             var parentDirectory = Directory.GetParent(_currentDirectory)?.FullName;
