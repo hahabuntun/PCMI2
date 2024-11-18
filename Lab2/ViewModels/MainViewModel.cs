@@ -124,7 +124,7 @@ namespace Lab2.ViewModels
                 Trace.WriteLine($"Copied items: {string.Join(", ", _clipboardItems)}");
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
-                OperationResult = new OperationResult { ResultTxt = "Items copied to clipboard.", IsError = false };
+                OperationResult = new OperationResult { ResultTxt = "Объекты скопированы", IsError = false };
             }
         }
 
@@ -137,7 +137,7 @@ namespace Lab2.ViewModels
                 Trace.WriteLine($"Cut items: {string.Join(", ", _clipboardItems)}");
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
-                OperationResult = new OperationResult { ResultTxt = "Items cut to clipboard.", IsError = false };
+                OperationResult = new OperationResult { ResultTxt = "Объекты вырезаны", IsError = false };
             }
         }
 
@@ -152,7 +152,7 @@ namespace Lab2.ViewModels
                     {
                         if (IsMovingIntoChildDirectory(clipboardItem, destinationPath))
                         {
-                            throw new InvalidOperationException("Cannot move parent directory into child directory.");
+                            throw new InvalidOperationException("Невозможно переместить родительскую директорию в дочернюю или в саму себя");
                         }
 
                         if (Directory.Exists(clipboardItem))
@@ -185,7 +185,7 @@ namespace Lab2.ViewModels
                     catch (Exception ex)
                     {
                         Trace.WriteLine($"Error during paste operation: {ex.Message}");
-                        OperationResult = new OperationResult { ResultTxt = $"Error during paste operation: {ex.Message}", IsError = true };
+                        OperationResult = new OperationResult { ResultTxt = $"Ошибка при операции вставки: {ex.Message}", IsError = true };
                         return;
                     }
                 }
@@ -194,7 +194,7 @@ namespace Lab2.ViewModels
                 _clipboardItems.Clear();
                 OnPropertyChanged(nameof(CanPasteItems));
                 UpdateCommandStates();
-                OperationResult = new OperationResult { ResultTxt = "Paste operation completed successfully.", IsError = false };
+                OperationResult = new OperationResult { ResultTxt = "Вставка выполнена успешно", IsError = false };
             }
         }
 

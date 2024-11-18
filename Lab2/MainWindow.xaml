@@ -5,13 +5,10 @@
         xmlns:local="clr-namespace:Lab2.Views"
         Title="Lab2" MinHeight="600" MinWidth="800" MaxHeight="600" MaxWidth="800">
     <TabControl>
-        <TabItem Header="File Explorer">
+        <TabItem Header="Меню" Padding="10">
             <local:FileExplorerView/>
         </TabItem>
-        <TabItem Header="Help">
-            <local:HelpView/>
-        </TabItem>
-        <TabItem Header="Command Line">
+        <TabItem Header="Командная строка" Padding="10">
             <local:CommandLineView/>
         </TabItem>
     </TabControl>

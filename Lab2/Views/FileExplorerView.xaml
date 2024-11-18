@@ -62,48 +62,193 @@
     </UserControl.Resources>
 
     <!-- Основной контейнер Grid -->
-    <Grid Margin="10">
-        <Grid.RowDefinitions>
-            <!-- Верхний ряд занимает 70% высоты -->
-            <RowDefinition Height="8*"/>
-            <!-- Нижний ряд занимает оставшиеся 30% -->
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
+    <TabControl TabStripPlacement="Right">
+        <TabItem Padding="20 5 20 5" Header="Главная">
+            <Grid Margin="10">
+                <Grid.RowDefinitions>
+                    <!-- Верхний ряд занимает 70% высоты -->
+                    <RowDefinition Height="8*"/>
+                    <!-- Нижний ряд занимает оставшиеся 30% -->
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
 
-        <!-- Верхняя часть: директория и кнопки -->
-        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Stretch">
-            <!-- Текущая директория -->
-            <TextBlock Text="{Binding CurrentDirectory}" FontWeight="Bold" FontSize="16" Margin="10,5" Foreground="DarkBlue"/>
+                <!-- Верхняя часть: директория и кнопки -->
+                <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                    <!-- Текущая директория -->
+                    <TextBlock Text="{Binding CurrentDirectory}" FontWeight="Bold" FontSize="16" Margin="10,5" Foreground="DarkBlue"/>
 
-            <!-- Панель с кнопками -->
-            <StackPanel Orientation="Horizontal">
-                <Button Command="{Binding NavigateBackCommand}" Content="Назад" Style="{StaticResource StyledButton}"/>
-                <Button Command="{Binding CopyCommand}" Content="Копировать" Style="{StaticResource StyledButton}"/>
-                <Button Command="{Binding CutCommand}" Content="Вырезать" Style="{StaticResource StyledButton}" />
-                <Button Command="{Binding PasteCommand}" Content="Вставить" Style="{StaticResource StyledButton}" />
-            </StackPanel>
+                    <!-- Панель с кнопками -->
+                    <StackPanel Orientation="Horizontal">
+                        <Button Command="{Binding NavigateBackCommand}" Content="Назад" Style="{StaticResource StyledButton}"/>
+                        <Button Command="{Binding CopyCommand}" Content="Копировать" Style="{StaticResource StyledButton}"/>
+                        <Button Command="{Binding CutCommand}" Content="Вырезать" Style="{StaticResource StyledButton}" />
+                        <Button Command="{Binding PasteCommand}" Content="Вставить" Style="{StaticResource StyledButton}" />
+                    </StackPanel>
 
-            <!-- Список файлов с прокруткой -->
-            <ListView ItemsSource="{Binding Items}" Height="300" SelectionMode="Extended" Margin="5"
+                    <!-- Список файлов с прокруткой -->
+                    <ListView ItemsSource="{Binding Items}" Height="300" SelectionMode="Extended" Margin="5"
                       MouseDoubleClick="ListView_MouseDoubleClick" SelectionChanged="ListView_SelectionChanged"
                       ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"
                       VerticalAlignment="Stretch">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding Name}" Margin="5"/>
-                            <TextBlock Text="{Binding IsDirectory, Converter={StaticResource BoolToTypeConverter}}" Margin="5"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </StackPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Name}" Margin="5"/>
+                                    <TextBlock Text="{Binding IsDirectory, Converter={StaticResource BoolToTypeConverter}}" Margin="5"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
 
-        <!-- Border, который занимает 30% оставшейся высоты и 100% ширины -->
-        <Border Grid.Row="1" CornerRadius="5" HorizontalAlignment="Stretch" Height="50" Margin="5" VerticalAlignment="Stretch"
-                Background="{Binding OperationResult.IsError, Converter={StaticResource BoolToColorConverter}}">
-            <!-- Здесь можно поместить любой контент или оставить Border пустым -->
-            <TextBlock Text="{Binding OperationResult.ResultTxt}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Border>
-    </Grid>
+                <!-- Border, который занимает 30% оставшейся высоты и 100% ширины -->
+                <Border Grid.Row="1" CornerRadius="5" HorizontalAlignment="Stretch" Height="50" Margin="5" VerticalAlignment="Stretch"
+        Background="{Binding OperationResult.IsError, Converter={StaticResource BoolToColorConverter}}">
+                    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                        <TextBlock Text="{Binding OperationResult.ResultTxt}" HorizontalAlignment="Center" VerticalAlignment="Center"
+                   TextWrapping="NoWrap"/>
+                    </ScrollViewer>
+                </Border>
+            </Grid>
+        </TabItem>
+
+        <TabItem Header="Обзорная справка" Padding="20 5 20 5">
+            <RichTextBox IsReadOnly="True" BorderThickness="0" Background="Transparent">
+                <FlowDocument>
+                    <Paragraph FontSize="16" FontWeight="Bold">Обзорная справка</Paragraph>
+                    <Paragraph>
+                        Программа "Проводник" предназначена для упрощённого доступа и управления файловой системой пользователя. 
+                    Основные задачи программы включают выполнение операций с файлами и предоставление удобного интерфейса для навигации.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Основные операции, которая может выполнять программа:</Bold>
+                    </Paragraph>
+                    <Paragraph>
+                        - Копирование 1 или нескольких файлов или папок в другую папку
+                    </Paragraph>
+                    <Paragraph>
+                        - Перенос 1 или нескольких файлов или папок в другую папку
+                    </Paragraph>
+                    <Paragraph>
+                        - Просмотр содержимого текущей папки
+                    </Paragraph>
+                    <Paragraph>
+                        - Возможность перехода между папками файловой системы
+                    </Paragraph>
+                    <Paragraph>
+                        - Вывод сообщений об ошибках
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Особенности программы:</Bold>
+                    </Paragraph>
+                    <Paragraph>
+                        - Высокая производительность и отзывчивость.
+                    </Paragraph>
+                    <Paragraph>
+                        - Минимальный и простой интерфейс
+                    </Paragraph>
+                    <Paragraph>
+                        - Низкий порог обучаемости новых пользователей
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </TabItem>
+
+        <TabItem Header="Справка предметной области" Padding="20 5 20 5">
+            <RichTextBox IsReadOnly="True" BorderThickness="0" Background="Transparent">
+                <FlowDocument>
+                    <Paragraph FontSize="16" FontWeight="Bold">Справка предметной области</Paragraph>
+                    <Paragraph>
+                        Программа "Проводник" предназначена для работы с файловой системой. 
+                Она предоставляет пользователю удобные инструменты для управления файлами и каталогами.
+                    </Paragraph>
+                    <Paragraph FontSize="14" FontWeight="Bold">Основные понятия:</Paragraph>
+                    <Paragraph>
+                        <Bold>Файл</Bold> — это именованная область данных, хранящая информацию (тексты, изображения, видео и др.). 
+                Пример: документ `отчет.docx` или изображение `фото.jpg`.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Каталог (директория, папка)</Bold> — структура для хранения файлов и других каталогов. Папки организуют файлы в удобную иерархию.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Клавиши клавиатуры</Bold> — средство ввода команд. Пример: комбинация клавиш Ctrl+C — копирование, Ctrl+V — вставка.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Парадигма меню</Bold> — способ управления программой через меню, где действия организованы в виде списка опций.
+                    </Paragraph>
+                    <Paragraph FontSize="14" FontWeight="Bold">Принцип работы:</Paragraph>
+                    <Paragraph>
+                        Для выполнения операции пользователь выбирает объект или несколько объектов (файл или папку) с помощью нажатия на них левой кнопкой мышки, затем задает команду
+                        'вырезать' или 'копировать' с помощью кнопок или с помощью клавиш ctr-x/ctr-c. Далее пользователь переходит в нужную папку нажимая на нее лкм или нажимая на кнопку назад.
+                        Далее пользователь нажимает кнопку вставить и программа выполняет запрос и, при необходимости, сообщает об успехе или ошибках.
+                    </Paragraph>
+                    <Paragraph>
+                        Программа предназначена для пользователей, которым требуется удобное управление 
+                данными на компьютере. Она поддерживает работу с большими объемами файлов, 
+                автоматизируя рутинные операции и обеспечивая ясный интерфейс.
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </TabItem>
+
+        <TabItem Header="Сообщения об ошибках" Padding="20 5 20 5">
+            <RichTextBox IsReadOnly="True" BorderThickness="0" Background="Transparent">
+                <FlowDocument>
+                    <Paragraph FontSize="16" FontWeight="Bold" Foreground="DarkBlue">Сообщения об ошибках</Paragraph>
+                    <Paragraph>
+                        Возможные ошибки при работе программы:
+                    </Paragraph>
+
+                    <!-- Разделитель -->
+                    <Paragraph>
+                        <LineBreak />
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Ошибка при операции вставки: Невозможно переместить родительскую директорию в дочернюю или в саму себя</Bold>
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Проблема:</Bold> Вы пытаетесь переместить папку в одну из ее дочерних папок или в саму себя, что нарушает структуру файловой системы.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Как исправить прямо сейчас:</Bold> Отмените операцию перемещения, выберите другую папку или переместите файлы по одному, чтобы избежать циклической зависимости.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Как избежать этой ошибки в будущем:</Bold> Будьте внимательны при выборе места для перемещения.
+                    </Paragraph>
+
+                    <!-- Горизонтальная линия -->
+                    <Paragraph>
+                        <LineBreak />
+                        <TextBlock Text="=====================================================" Foreground="Gray"/>
+                        <LineBreak />
+                    </Paragraph>
+                    
+                    
+                    <Paragraph>
+                        <Bold>Ошибка при операции вставки: Процесс не может получить доступ к файлу, так как этот файл занят другим процессом</Bold>
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Проблема:</Bold> Попытка копирования или перемещения файла, который в данный момент используется другим приложением или процессом.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Как исправить прямо сейчас:</Bold> Закройте приложение, которое использует данный файл, или завершите процесс через диспетчер задач.
+                    </Paragraph>
+                    <Paragraph>
+                        <Bold>Как избежать этой ошибки в будущем:</Bold> Перед выполнением операций с файлами убедитесь, что они не используются другими программами, и при необходимости завершите их работу.
+                    </Paragraph>
+
+                    <!-- Разделитель -->
+                    <Paragraph>
+                        <LineBreak />
+                    </Paragraph>
+
+                    
+
+                </FlowDocument>
+            </RichTextBox>
+        </TabItem>
+
+
+    </TabControl>
+    
 </UserControl>
