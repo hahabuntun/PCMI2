@@ -1,0 +1,678 @@
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Copied items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe.config, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.pdb, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe
+Executed Copy command.
+Cut items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe.config, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.pdb, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe
+Executed Cut command.
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Cut items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe.config, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.pdb, C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Moved file from C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe to C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Lab2.exe
+Moved file from C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.exe.config to C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Lab2.exe.config
+Moved file from C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Lab2.pdb to C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Lab2.pdb
+Error during paste operation: The process cannot access the file because it is being used by another process.
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Cut items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Error during paste operation: The process cannot access the file because it is being used by another process.
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Copied file from C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\log.txt to C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\log.txt
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Cut items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Error during paste operation: The process cannot access the file because it is being used by another process.
+Executed Paste command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\rab-tut
+Executed Copy command.
+Cut items: C:\Users\User\Desktop\rab-tut
+Executed Cut command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\seti
+Selected items changed: 
+Moved directory from C:\Users\User\Desktop\rab-tut to C:\Users\User\Desktop\seti\rab-tut
+Executed Paste command.
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\HMI_lab2-main
+Executed Copy command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main
+Selected items changed: 
+Error during paste operation: Could not find a part of the path 'C:\Users\User\Desktop\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\HMI_lab2-main\CMakeLists.txt'.
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\HMI_lab2-main
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main
+Navigating back to directory: C:\Users\User\Desktop
+Navigating back to directory: C:\Users\User
+Navigating back to directory: C:\Users
+Navigating back to directory: C:\
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\HMI_lab2-main
+Executed Copy command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo
+Selected items changed: 
+Error during paste operation: The specified path, file name, or both are too long. The fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main\demo
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo\HMI_lab2-main
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main\demo
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo\HMI_lab2-main
+Navigating back to directory: C:\Users\User\Desktop\HMI_lab2-main\demo
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\lab1
+Executed Copy command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab1
+Selected items changed: 
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Copied directory from C:\Users\User\Desktop\pcmi\lab1 to C:\Users\User\Desktop\lab1
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\lab1
+Selected items changed: 
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Cut items: C:\Users\User\Desktop\HMI_lab2-main\src
+Executed Cut command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\HMI_lab2-main\src
+Selected items changed: 
+Error during paste operation: Cannot move parent directory into child directory.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+Cut items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Release
+Executed Cut command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Release
+Selected items changed: 
+Error during paste operation: Cannot move parent directory into child directory.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\web-7
+Executed Copy command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\web-7
+Selected items changed: 
+Error during paste operation: Cannot move parent directory into child directory.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Navigating back to directory: C:\Users\User
+Navigating back to directory: C:\Users
+Navigating back to directory: C:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Games
+Selected items changed: 
+Navigating back to directory: C:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Riot Games
+Selected items changed: 
+Navigating back to directory: C:\
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: FileItem
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe
+Executed Copy command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe
+Executed Copy command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\Models
+Executed Copy command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\komodlabs
+Selected items changed: 
+Copied directory from C:\Users\User\Desktop\pcmi\Lab2\Lab2\Models to C:\Users\User\Desktop\komodlabs\Models
+Executed Paste command.
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\komodlabs
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\lab2.ch_m
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\lab2.ch_m\.vs
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\lab2.ch_m
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\lab2.ch_m\.vs
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\lab2.ch_m
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\lab1
+Executed Copy command.
+Navigating back to directory: C:\Users\User
+Selected items changed: 
+Navigating back to directory: C:\Users
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug
+Executed Copy command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Release
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Lab2.exe
+Executed Copy command.
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Lab2.exe.config, C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Lab2.exe, C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Release
+Executed Copy command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Error during paste operation: The file 'C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config' already exists.
+Executed Paste command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Lab2.exe.config, C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Release, C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Lab2.exe
+Executed Copy command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+ListView item double-clicked.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\Lab2\Lab2
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Copied items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\Properties, C:\Users\User\Desktop\pcmi\Lab2\Lab2\obj, C:\Users\User\Desktop\pcmi\Lab2\Lab2\Converters
+Executed Copy command.
+Cut items: C:\Users\User\Desktop\pcmi\Lab2\Lab2\Properties, C:\Users\User\Desktop\pcmi\Lab2\Lab2\obj, C:\Users\User\Desktop\pcmi\Lab2\Lab2\Converters
+Executed Cut command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Navigating back to directory: C:\Users\User
+Navigating back to directory: C:\Users
+Navigating back to directory: C:\
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Executed Copy command.
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Error during paste operation: Cannot move parent directory into child directory.
+Executed Paste command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+ListView item double-clicked.
+Selected items changed: FileItem
+ListView item double-clicked.
+Selected items changed: FileItem
+ListView item double-clicked.
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Selected items changed: FileItem
+Selected items changed: FileItem
+Copied items: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Release
+Executed Copy command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug
+Selected items changed: 
+Copied directory from C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Release to C:\Users\User\Desktop\pcmi\lab2\Lab2\bin\Debug\Release
+Executed Paste command.
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2\bin
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2\Lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi\lab2
+Navigating back to directory: C:\Users\User\Desktop\pcmi
+Navigating back to directory: C:\Users\User\Desktop
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release
+Selected items changed: 
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release
+Executed Copy command.
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem, FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Cut items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Cut items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Cut items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Cut items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Cut items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Cut command.
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.pdb, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe.config, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release, D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Release
+Executed Copy command.
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem, FileItem, FileItem, FileItem, FileItem
+Selected items changed: FileItem
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Selected items changed: FileItem
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2
+Selected items changed: 
+Navigating back to directory: D:\учеба\pcmi\Lab2
+Navigating back to directory: D:\учеба\pcmi
+Navigating back to directory: D:\учеба
+Navigating back to directory: D:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\alm
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\alm\Data
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Navigating back to directory: D:\alm
+Selected items changed: 
+Navigating back to directory: D:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\alm
+Selected items changed: 
+Navigating back to directory: D:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\COPY
+Selected items changed: 
+Navigating back to directory: D:\
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\INSTALL
+Selected items changed: 
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\INSTALL\ABBYY FineReader Professional 12.0.101.382 RePack
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: 
+Selected items changed: FileItem
+Selected items changed: FileItem, FileItem
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\Lab2.exe
+Executed Copy command.
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Error during paste operation: The file 'D:\учеба\pcmi\Lab2\Lab2\bin\Lab2.exe' already exists.
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\учеба\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Error during paste operation: The file 'D:\учеба\pcmi\Lab2\Lab2\bin\log.txt' already exists.
+Executed Paste command.
+Selected items changed: FileItem
+ListView item double-clicked.
+Navigating to directory: D:\учеба\pcmi\Lab2\Lab2\bin\Debug
+Selected items changed: 
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Selected items changed: FileItem
+Error during paste operation: The file 'D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt' already exists.
+Executed Paste command.
+Selected items changed: FileItem
+Selected items changed: FileItem
+Selected items changed: FileItem
+Copied items: D:\учеба\pcmi\Lab2\Lab2\bin\Debug\log.txt
+Executed Copy command.
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2\bin
+Selected items changed: 
+Navigating back to directory: D:\учеба\pcmi\Lab2\Lab2
